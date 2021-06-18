@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <script
+      defer
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <script defer src="script.js"></script>
+    <title>Frontend Mentor | IP Address Tracker</title>
+  </head>
+  <body>
+    <div class="container_text">
+      <h1>IP Address Tracker</h1>
+      <form>
+        <label for="ip_address"></label>
+        <input
+          type="text"
+          id="ip_address"
+          name="ip_address"
+          placeholder="Search for any IP address or domain"
+        />
+        <button type="button">
+          <img src="/images/icon-arrow.svg" alt="arrow svg" />
+        </button>
+      </form>
+      <ul class="content">
+        <li class="separator">
+          <ul>
+            <li class="content_header">ip address</li>
+            <li class="ip content_main"></li>
+          </ul>
+        </li>
+        <li class="separator before">
+          <ul>
+            <li class="content_header">location</li>
+            <li class="location content_main"></li>
+          </ul>
+        </li>
+        <li class="separator before">
+          <ul>
+            <li class="content_header">timezone</li>
+            <li class="timezone content_main"></li>
+          </ul>
+        </li>
+        <li class="before">
+          <ul>
+            <li class="content_header">isp</li>
+            <li class="isp content_main"></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div id="mapid"></div>
+  </body>
+</html>

@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+body {
+  display: block;
+  height: 100vh;
+  position: relative;
+}
+#mapid {
+  height: 60%;
+}
+.container_text {
+  height: 40%;
+  background: url("/images/pattern-bg.png") center no-repeat;
+  background-size: cover;
+  padding-top: 6vh;
+}
+h1 {
+  margin-bottom: 5vh;
+  text-align: center;
+  color: white;
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+form {
+  width: 85%;
+  max-width: 450px;
+  position: relative;
+  margin: 0 auto;
+}
+.content {
+  background-color: white;
+  position: absolute;
+  z-index: 1000;
+  top: 26%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 330px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  border-radius: 13px;
+  padding: 18px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.123);
+}
+li {
+  padding: 1px;
+  text-align: center;
+  list-style-type: none;
+}
+input {
+  padding: 13px;
+  font-size: 18px;
+  width: 100%;
+  border-radius: 13px;
+}
+input::placeholder {
+  color: hsl(0, 0%, 59%);
+  font-size: 14px;
+}
+input,
+button {
+  border: none;
+  outline: none;
+}
+.before {
+  position: relative;
+}
+button {
+  position: absolute;
+  width: 50px;
+  height: 100%;
+  border-top-right-radius: 13px;
+  border-bottom-right-radius: 13px;
+  background-color: black;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+button:hover {
+  opacity: 0.8;
+}
+input:hover {
+  cursor: pointer;
+}
+.content_header {
+  color: hsl(0, 0%, 59%);
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+.content_main {
+  color: hsl(0, 0%, 17%);
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-top: 6px;
+}
+.separator {
+  margin-bottom: 2vh;
+}
+@media (min-width: 880px) {
+  .content_header,
+  .content_main {
+    text-align: start;
+  }
+  .content {
+    flex-direction: row;
+  }
+  .separator {
+    margin-bottom: 0;
+    margin-right: 30px;
+  }
+  .content {
+    padding: 30px;
+    width: 65%;
+  }
+  .content_main {
+    font-size: 1.3rem;
+  }
+}
+@media (min-width: 1100px) {
+  .before::before {
+    position: absolute;
+    content: "";
+    width: 0.2px;
+    height: 80%;
+    transform: translateY(-20%);
+    background-color: hsl(0, 0%, 80%);
+    top: 30%;
+    left: -10px;
+  }
+  .content {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    font-size: 1.5rem;
+  }
+}
