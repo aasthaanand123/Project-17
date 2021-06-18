@@ -72,7 +72,8 @@ async function request(address) {
   i++;
 }
 //add event listener
-button.addEventListener("click", function () {
+button.addEventListener("click", function (e) {
+  e.preventDefault();
   let value = input.value;
   if (value) {
     request(value);
