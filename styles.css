@@ -36,12 +36,12 @@ form {
 }
 .content {
   background-color: white;
-  position: absolute;
+  position: relative;
   z-index: 1000;
-  top: 26%;
+  top: 10%;
   left: 50%;
   transform: translate(-50%);
-  width: 330px;
+  width: 320px;
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
