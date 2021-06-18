@@ -48,7 +48,7 @@ async function request(address) {
       address == ""
     ) {
       let info_one = await fetch(
-        `https://geo.ipify.org/api/v1?apiKey=at_AIUkTP7XNxfNxJ4Bhk6kdAsGBmWQL${
+        `https://geo.ipify.org/api/v1?apiKey${
           address && Number(address[0]) ? "&ipAddress=" + address : ""
         } ${address && !Number(address[0]) ? "&domain=" + address : ""}`
       );
